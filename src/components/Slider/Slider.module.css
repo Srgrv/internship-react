@@ -1,0 +1,16 @@
+.slider {
+  width: 400px;
+
+  border: 2px solid black;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.sliderLine {
+  width: 2400px;
+  background-color: orange;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
