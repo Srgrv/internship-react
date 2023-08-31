@@ -9,7 +9,7 @@ const Header = () => {
       <h2 className={classes.logo}>Maxima</h2>
       <ul className={classes.menu}>
         <li>
-          <a href="main">Главная</a>
+          <a href="/">Главная</a>
         </li>
         <li>
           <a href="main">Новости</a>
@@ -18,7 +18,10 @@ const Header = () => {
           <a href="about">О нас</a>
         </li>
         <li>
-          <a href="contacts">Контакты</a>
+          <a href="contact">Контакты</a>
+        </li>
+        <li>
+          <a href="login">Регистрация</a>
         </li>
       </ul>
     </header>

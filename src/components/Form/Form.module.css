@@ -1,0 +1,17 @@
+.form {
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.container {
+}
+
+.field {
+  margin-bottom: 5px;
+}

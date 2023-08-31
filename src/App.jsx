@@ -1,28 +1,25 @@
-//style
-import classes from "./App.module.css";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
 //components
-import Header from "./components/Header/Header";
-import Slider from "./components/Slider/Slider";
-import Footer from "./components/Footer/Footer";
+import Layout from "./components/Layout/Layout";
+import HomePage from "./pages/HomePage/HomePage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 
-import ButtonBack from "./components/ButtonBack/ButtonBack";
-import ButtonNext from "./components/ButtonNext/ButtonNext";
+import ContactPage from "./pages/ContactsPage/ContactPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <div className="container">
-        <Header />
-        <Slider />
-        <div className={classes.button}>
-          <ButtonBack />
-          <ButtonNext />
-        </div>
-        <Footer />
-      </div>
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="login" element={<LoginPage />} />
+        </Route>
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
